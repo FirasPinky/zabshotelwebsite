@@ -1,0 +1,398 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+	 <meta http-equiv="x-ua-compatible" content="ie=edge">
+	  <link rel="stylesheet" href="Style.css" /> 
+  <title>Hotel Booking Websites </title> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="Style.css">
+ <link rel="stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+  <style>
+
+.review-title {
+    text-align: center;
+    margin: 20px auto; 
+    background-color: rgba(209, 190, 168, 0.7);
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px; 
+    border-radius: 10px; 
+    
+    
+}
+
+rating-containers {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.section {
+    width: 33.33%;
+    height: 300px;
+    box-sizing: border-box;
+    padding: 20px;
+    float: left;
+    background-color: rgb(227,218,201);
+}
+   
+
+
+/* Overall Rating Title */
+.overall-rating-title {
+text-align: center; /* Center align the title text */
+color: #543A0F;
+
+}
+
+
+/* Rating Bar */
+.rating-bar {
+margin-top: 10px;
+
+}
+.rating-label {
+margin-right: 150px; /* Increase margin for spacing */
+}
+
+.bar {
+height: 20px;
+background-color: khaki;
+margin-left: 170px;
+margin-top: -10px;
+}
+
+/* Adjusting width based on your existing styles */
+.rating.rating-5 .bar { width: 150px; }
+.rating.rating-4 .bar { width: 120px; }
+.rating.rating-3 .bar { width: 90px; }
+.rating.rating-2 .bar { width: 60px; }
+.rating.rating-1 .bar { width: 30px; }
+
+
+/* middle sections */
+
+.rating {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 0;
+    align-items: center;
+    color: #543A0F;
+}
+
+.star-icons {
+    display: flex;
+    align-items: center;
+    justify-content: normal;
+    margin-bottom: 5px;
+    
+}
+
+.fa {
+    color: #fdd835;
+}
+
+/* New class for half-filled star */
+.fa-star-half {
+position: relative;
+display: inline-block;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0em 0em 1em 0em;
+border-color: #fdd835;
+margin-right: 2px;
+}
+
+.p {
+margin: 0;
+margin-left: 210px;
+color: #543A0F;
+}
+
+
+.count {
+    
+    margin-top: 5px; 
+    font-size: 1.5em; 
+    text-align: left;
+    margin-left: 20px;
+}
+ 
+/*Right Section */
+star-rating {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    color: #543A0F;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.star-rating input:checked ~ label {
+    color: #fdd835;
+    unicode-bidi: bidi-override;
+    direction: ltr;
+   
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #543A0F;
+}
+.buttonreview {
+    background-color: rgb(195, 176, 145); 
+    color: #fff; 
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonreview:hover {
+    background-color: #543A0F; 
+}
+
+
+.clearfix{
+    clear: both;
+}
+/* Comment box */
+       .comment-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .comment-box 
+            {
+                background-color: white;
+                display: flex;
+                padding: 20px;
+                margin:20px 80px 40px 80px;
+                
+            }
+
+        .profile-pic 
+        {
+              width: 50px;
+              height: 50px;
+              background-color: #ccc; /* Add a background color or set a background image */
+              border-radius: 50%;
+              margin: 10px 10px 10px 5px;
+            }
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+}
+
+.comment-header h3 {
+    margin-right: 10px;
+}
+
+.star-rating1 {
+    display: flex;
+    align-items: center;
+}
+
+.star-rating1 .fa {
+    color: #fdd835;
+    margin-right: 2px;
+}
+.comment-content p {
+    margin-top: 10px;
+    margin-bottom: 20px; 
+}
+
+
+</style>
+
+<body>
+    
+    <!-- Header -->
+    <nav>
+        <li><img class="logo-img" src="Images/LOGO1-removebg-preview.png" height="90px"></li>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Rooms.html">Rooms</a></li>
+        <li><a href="Facilities.html">Facilities</a></li>
+        <li><a href="Offer.html">Offer</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Location.html">Location</a></li>
+        <li><a class= "active" href="Review.html">Review</a></li>
+    </nav>
+
+    <!-- Review and Rating Title -->
+    <div class="title">
+        <h1 class="centered-heading">REVIEWS AND RATING</h1>
+        <p><i>"A good, sympathetic review is always a wonderful surprise"<br>- Joyce Carol Oates</i></p>
+    </div>
+
+        <!-- Left Section for Overall Rating -->
+        <div class="section">
+            <div class="overall-rating-title">
+                <h2>Overall Rating:</h2>
+            </div>
+            <div class="rating-bar">
+                <div class="rating rating-5">
+                    <span class="rating-label">5:</span>
+                    <div class="bar"></div>
+                </div>
+                <div class="rating rating-4">
+                    <span class="rating-label">4:</span>
+                    <div class="bar"></div>
+                </div>
+                <div class="rating rating-3">
+                    <span class="rating-label">3:</span>
+                    <div class="bar"></div>
+                </div>
+                <div class="rating rating-2">
+                    <span class="rating-label">2:</span>
+                    <div class="bar"></div>
+                </div>
+                <div class="rating rating-1">
+                    <span class="rating-label">1:</span>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle Section for Additional Rating -->
+<div class="section">
+    <div class="rating">
+        <h2 style="padding-top: 60px; padding-left: 5px; text-align: left; font-size: 4em;">4.5</h2>
+    </div>
+    <div class="star-icons">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star-half"></span>
+    </div>
+    <p class="count">(106)</p>
+</div>
+
+      <!-- Right Section for Customer Rating and Review -->
+              <div class="section">
+                  <h2>Rate Us</h2>
+                  <form id="ratingForm">
+                      <label for="star-rating">Rate and Review From Right To left</label>
+                      <div class="star-rating" id="star-rating">
+                          <input type="radio" name="rating" value="1" id="star1"><label for="star1" class="fa fa-star"></label>
+                          <input type="radio" name="rating" value="2" id="star2"><label for="star2" class="fa fa-star"></label>
+                          <input type="radio" name="rating" value="3" id="star3"><label for="star3" class="fa fa-star"></label>
+                          <input type="radio" name="rating" value="4" id="star4"><label for="star4" class="fa fa-star"></label>
+                          <input type="radio" name="rating" value="5" id="star5"><label for="star5" class="fa fa-star"></label>
+                      </div>
+                      <label for="feedback">Share your experience:</label>
+                      <textarea id="feedback" name="feedback" rows="4" cols="45" placeholder="Write your feedback here..."></textarea>
+                      <button type="submit" class="buttonreview">Submit</button>
+                  </form>
+              </div>
+
+              <div class="clearfix">
+
+              </div>
+            
+ <!-- Comment Section -->
+<div class="comment-section">
+    <div class="comment-box">
+        <div class="profile-pic">
+            <img src="Images/pp2.jpg" alt="Azhar Heri's Profile">
+        </div>
+        <div class="comment-content">
+            <div class="comment-header">
+                <h3>Azhar Heri</h3>
+            </div>
+            <div class="star-rating1">
+                <!-- Display star rating here -->
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <p>Hotel ini sangat Seronok diduki saya kasi 4 bintang. Yahuuuu</p>
+        </div>
+    </div>
+    <div class="comment-box">
+        <div class="profile-pic">
+            <img src="Images/pp1.jpg" alt="Amir Somad's Profile">
+        </div>
+        <div class="comment-content">
+            <div class="comment-header">
+                <h3>Amir Somad</h3>
+            </div>
+            <div class="star-rating1">
+                <!-- Display star rating here -->
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <p>Saya Dari Sabah seronok Bah duduk sini dan makanan sini sedap juga.</p>
+        </div>
+    </div>
+</div>
+
+
+                
+</body>
+
+<footer>
+        <div class="container">
+
+            <div class="footer-col">
+                <h3>Location Address:</h3>
+                <p>No 23,Jalan Pantai,Kuala Terengganu</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>How can we help you?</h3>
+                <div class="centerbtn">
+                    <button><a href="tel:601136527066" class="btn btn1">Request a call</a></button>
+                    <button><a href="daniafiras13@gmail.com" class="btn btn2">Email Us</a></button>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Follow Us On</h3>
+                <div class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-bar">
+            <p>&copy2023 Zab's Hotel</p>
+        </div>
+    </footer>
+
+</html>

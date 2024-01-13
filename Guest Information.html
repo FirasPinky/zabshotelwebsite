@@ -1,0 +1,315 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	  <title>Reservation Form </title> 
+	  <meta charset="utf-8"> 
+	  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	 	<link rel="stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+		<!-- Link to your external JavaScript file -->
+        <script src="project.js"defer></script>
+ 
+      <style>
+	  
+	  *{
+	  font-family:'Poppins';
+	  margin:0; 
+	  padding:0;
+	  box-sizing:border -box;
+	  outline:none;
+	  border:none;
+	  text-transform:capitalize;
+	  transition:all .2s linear;
+	  }
+	  
+	  #header {
+           position: relative;
+           text-align: center;
+           color: #543A0F;
+           font-size: 1.5em;
+           left: 0;
+           right: 0;
+           margin: auto; /* Center horizontally */
+           border-bottom: 1px solid #ccc;
+       }
+	   .container{
+           display:flex;
+	       justify-content:center;
+	       align-items:center;
+	       padding:25px;
+		   min-height:100vh;
+	       background-color:#d1bea8;
+	       padding-bottom:70px;
+	   }
+	   .container form{
+            display: flex;
+			justify-content:space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+            width: 100%;
+            max-width: 1000px;
+            background: #ffffff;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+		}
+	   .container form .row .col{
+		   flex:1 1 250%;
+		}
+		.container form .row .col .title{
+		   font-size:30px;
+		   color:rgb(195, 176, 145);
+		   padding-bottom:5px;
+		   
+		}
+		.container form .row .col .inputBox{
+		    margin:15px 0;
+		}
+		.container form .row .col .inputBox span{
+		    margin-bottom:5px;
+			display:block;
+		}
+		.container form .row .col .inputBox input{
+            width:100%
+			border:1px solid #ccc;
+			padding:10px 15px;
+			font-size:15px;
+			text-transform:none;
+		}
+		.container form .row .col .inputBox input:focus{
+			border:1px solid #8a795d;
+		}
+	   .container form .row .col .flex{
+		    display: flex;
+            justify-content: space-between;
+			gap:15px;
+        }
+	   .container form .row .col .flex .inputBox{
+	        margin-top:5px;
+		}
+		.flex-container {
+            display: flex;
+            align-items: center; /* Align items vertically in the center */
+}
+
+        .flex-container i {
+            margin-right: 10px; /* Add margin to separate the icon and title */
+}
+        .icon-container {
+         margin-bottom: 20px;
+         padding: 7px 0;
+         font-size: 24px;
+}
+		 /* New styles for payment method section */
+        .payment-section {
+            flex: 1 1 100%;
+            margin-top: 20px;
+           
+
+        .payment-section .title {
+            font-size: 30px;
+            color: rgb(195, 176, 145);
+            padding-bottom: 5px;
+            
+        }
+
+        .payment-section .inputBox {
+            margin: 15px 0;
+        }
+
+        .payment-section .inputBox span {
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .payment-section .inputBox input {
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+            font-size: 15px;
+            text-transform: none;
+        }
+
+        .payment-section .inputBox input:focus {
+            border: 1px solid #000;
+        }
+
+		 
+        .submit-btn {
+            background-color: rgb(195, 176, 145); 
+            color: #fff;
+            padding: 10px 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+			float:right;
+        }
+
+        .submit-btn:hover {
+            background-color:#543A0F;
+			}
+
+		   
+		   
+		</style>
+  </head>
+  
+  <body>
+  <!--set header-->
+
+    <div id="header">
+     <h1>Reservation Form</h1>
+	 
+    </div>
+	
+	<div class="container">
+	<form onsubmit="return handleFormSubmit()">
+	   <form action="">
+	      <div class="row">
+		     <div class="col">
+			 
+	        <div class="flex-container">
+             <i class="fa-solid fa-user"></i>
+	         <h2 class="title">Guest Information</h2>
+			 </div>
+             <div class="inputBox">
+			     <span>first name:</span>
+                 <input type="text" placeholder="Enter first name" required>
+             </div>
+			 <div class="inputBox">
+			     <span>last name:</span>
+                 <input type="text" placeholder="Enter last name" required>
+             </div>
+             <div class="inputBox">
+			     <span>email:</span>
+                 <input type="email" placeholder="Zab's@gmail.com" required>
+             </div>
+
+             <div class="inputBox">
+			     <span>phone number:</span>
+                 <input type="tel" placeholder="017-9230700" required>
+             </div>
+             <div class="inputBox">
+			     <span>address:</span>
+                 <input type="text" placeholder="Enter your address" required>
+             </div>
+			 <div class="flex">
+			  <div class="inputBox">
+			     <span>country:</span>
+                 <input type="text" placeholder="Country" required>
+             </div>
+			      <div class="inputBox">
+			      <span>Poscode:</span>
+                 <input type="text" placeholder="Poscode" required>
+				 </div>
+				 </div>
+			 <div class="flex">
+               <div class="inputBox">
+			     <span>city:</span>
+                 <input type="text" placeholder="City" required>
+             </div>
+			    <div class="inputBox">
+			     <span>state:</span>
+                 <input type="text" placeholder="State" required>
+             </div>
+            </div>
+        </div>
+    
+ <!-- Payment Method Section -->
+            <div class="row payment-section">
+                <div class="col">
+                    <div class="flex-container">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                        <h2 class="title">Payment Method</h2>
+                    </div>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+                    <!-- Credit Card Option -->
+                    <input type="radio" name="payment" value="credit-card" id="credit-card">
+                    <label for="credit-card">Credit Card</label>
+                    <div class="inputBox">
+                        <span>Credit card number:</span>
+                        <input type="text" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>expiry month:</span>
+                            <input list="expiredmonth" placeholder="Month">
+                            <datalist id="expiredmonth">
+                                <option value="January">
+                                <option value="February">
+                                <option value="March">
+                                <option value="April">
+                                <option value="May">
+                                <option value="June">
+                                <option value="July">
+                                <option value="August">
+                                <option value="September">
+                                <option value="October">
+                                <option value="November">
+                                <option value="December">
+                            </datalist>
+                        </div>
+                        <div class="inputBox">
+                            <span>expiry year:</span>
+                            <input type="number" min="2022" max="2030">
+                        </div>
+                    </div>
+		
+             <!-- Online Banking Option -->
+            <input type="radio" name="payment"  value="online-banking"id="online-banking">
+
+            <label for="online-banking">Online Banking</label>
+               
+               <div class="inputBox">
+                 <select id="online-banking-select">
+                      <option value="select-bank" disabled selected>Select your Bank:</option>
+                      <option value="maybank" data-link="https://www.maybank2u.com.my" >Maybank2u</option>
+                      <option value="CIMB" data-link="https://www.cimbclicks.com.my">CIMBClicks</option>
+                      <option value="bank-islam" data-link="https://www.bankislam.com.my">Bank Islam</option>
+                 </select>
+                </div>
+            <!-- Cash Option -->
+            
+               <input type="radio" name="payment" value="cash" id="cash">
+               <label for="cash">Cash</label>
+              <br>
+			  <br>
+             <!-- Checkbox for shipping address -->
+             <label class="shipping-label">
+              <input type="checkbox" checked="checked" name="sameadr">This form have <a href="#">Terms & Privacy</a>
+             </label>
+         	<br>
+			<br>
+	<h3 >How Can We Help You?</h3>
+	<button> <a href="tel:601136527066"class="submit-btn">Request a Call</a></button>
+    <button><a href="https://mail.google.com/" class="submit-btn">Email Us</a></button>
+
+    <input type="submit" value="Confirm Booking" class="submit-btn">
+	</form>
+
+</div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const onlineBankingSelect = document.getElementById("online-banking-select");
+
+        onlineBankingSelect.addEventListener("change", function () {
+            const selectedOption = onlineBankingSelect.options[onlineBankingSelect.selectedIndex];
+            const link = selectedOption.getAttribute("data-link");
+
+            if (link) {
+                window.location.href = link;
+            }
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,255 @@
+/* body CSS */
+body
+{
+	margin: 0px;
+	padding: 0px;
+	text-align:justify;
+	width:100%;
+	background-color:rgb(227,218,201);
+	/*background-image: url(bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;*/
+	font-family: "Poppins";
+	display:inline;
+	box-sizing: border-box;	
+}
+
+.centered-heading
+{
+	position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 2.0em;
+    color: #543A0F;
+}
+
+.title
+{
+	text-align: center;
+	background-color: rgba(209,	190, 168, 0.5);
+	padding: 5px 0px;
+	margin-bottom: 20px;
+}
+
+/* Booking form styles */
+.flex 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid 
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.book 
+{
+    margin-top: 5%;
+    width: 100%;
+    color: white;
+    text-align: center;
+	text-transform:uppercase;
+}
+
+.book .input 
+{
+    background: rgb(160, 120, 90);
+    padding: 20px 20px 40px 20px;  
+}
+
+.book .search 
+{
+	margin-top: 15px;
+	margin-left: 10px;
+    background: #d1bea8;
+    
+}
+
+input 
+{
+	width: 100%;
+    padding: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    outline: none;
+    background: rgb(179, 139, 109);
+    margin-top: 20px;
+    color: white;
+}
+
+::placeholder 
+{
+    color: white;
+}
+
+.book .search input 
+{
+    background: none;
+    border: none;
+    font-weight: bold;
+	font-family: "Poppins";
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.book .search input:hover 
+{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* Navigation bar CSS */
+nav
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	letter-spacing: 4px;
+	background-color: rgba(255,255,255,0);
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	font-size:20px;
+}
+
+nav li
+{
+	float: left;
+}
+
+nav li a
+{
+	display: block;
+	color: #543A0F;
+	text-align: center;
+	padding: 20px 40px;
+	text-decoration: none;
+}
+
+nav li a:hover:not(.active) 
+{
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.active 
+{
+	background-color: rgba(255, 255, 255, 0.4);
+}
+/*company logo belah atas kiri*/
+.logo-img{
+    float: left;
+    position: relative;
+    margin: 10px 15px 15px 10px;
+}
+
+/* footer CSS*/
+footer
+{
+	background-color:#d1bea8;
+	width:100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    color: #543A0F;
+    padding: 5px;
+}
+
+.container
+{
+	height: 65px;
+	width:100%;
+	margin:auto;
+	display:flex;
+	justify-content:center;
+}
+
+h3
+{
+	font-size:20px;
+	margin-bottom:10px;
+	text-align:center;
+	
+}
+
+.footer-col
+{
+	width:33%;
+	padding:0 15px;
+}
+
+.footer-col p
+{
+	width:190px;
+	margin:auto;
+	padding:7px;
+}
+
+.btn
+{
+	background:none;
+	padding:10px 20px;
+	font-size:15px;
+	font-family:"Poppins";
+	cursor:pointer;
+}
+
+.btn1,.btn2
+{
+	color:#543A0F;
+	text-decoration: none;
+}
+
+.centerbtn
+{
+	margin: 0px 80px;
+}
+
+.social-links
+{
+	text-align:center;
+	padding:0;
+}
+
+.social-links li
+{
+	display:inline-block;
+	text-align:center;
+    padding:5px;
+}
+
+.social-links i
+{
+	color:white;
+	font-size:25px;
+}
+
+.social-links a
+{
+	text-decoration:none;
+}
+
+.social-links a:hover
+{
+	color:rgb(195,176,145);
+}
+
+.social-links i:hover
+{
+	color:rgb(195,176,145);
+}
+
+.bottom-bar p
+{
+	text-align:center;
+}
+/* end of footer*/
+	
+	
+
+
+

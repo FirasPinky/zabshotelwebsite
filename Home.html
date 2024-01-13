@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+	
+	  <title>Hotel Booking Websites </title> 
+	  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	  <link rel="stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <link rel="stylesheet" href="Style.css"> 
+	  <style>
+		  	body
+		  	{
+		  		background-image:url('Images/backgroundhome.jpg');
+		  	}
+
+		  	.sections 
+		  	{
+		  		display: flex;
+		      	ustify-content: space-between;
+		      	flex-wrap: wrap;
+		      	margin-top: 20px;
+		   	}
+		   	.sections h2
+		  	{
+		  		text-align: center;
+		  		padding-bottom: 20px;
+		   	}
+
+		    .section 
+		    {
+		      box-sizing: border-box;
+		      width: 33.3%;
+		      margin-top: 20px;
+		      padding: 10px 20px;
+		      background-color: rgb(227,218,201, 0.9);
+		      overflow: hidden;
+			  color:#543A0F;
+		    }
+
+		    .section img 
+		    {
+		      max-width: 100%;
+		      height: auto;
+		    }
+
+    		.image-container 
+    		{
+  				position: relative;
+			}
+
+			.gallery-item 
+			{
+			  width: 40%;
+			  float: left;
+			  box-sizing: border-box;
+			  overflow: hidden;
+			  margin: 5px 16px;
+			
+			}
+
+			.gallery-item img 
+			{
+			  width: 100%;
+			  height: 100px;
+			}
+
+		    /* Add styles for comment box */
+			.comment-box 
+			{
+				background-color: white;
+			  	display: flex;
+			  	padding: 20px;
+			  	border-radius: 25px;
+			}
+
+			/* Add styles for profile picture */
+			.profile-pic 
+			{
+			  width: 50px;
+			  height: 50px;
+			  background-color: #ccc; /* Add a background color or set a background image */
+			  border-radius: 50%;
+			  margin: 0px 5px;
+			}
+
+			/* Add styles for comment content */
+			.comment-content 
+			{
+				margin-left: 10px;
+			  	flex-grow: 1;
+			}
+
+			.comment-content h3 
+			{
+				text-align: left;
+			  	margin: 0px 10px;
+			}
+
+			/* Add styles for star rating */
+			.star-rating 
+			{
+			  color: #ffd700; /* Set the color of the stars */
+			  font-size: 20px;
+			  margin: 5px 10px;
+			}
+
+			/* Add styles for the checked star */
+			.checked 
+			{
+			  color: #fdd835; /* Set the color of the checked stars */
+			}
+
+			.comment-content p 
+			{
+			  margin: 5px 10px;
+			}
+	  </style>
+  </head>
+  
+  <body>
+        
+  	<!-- Header --> 
+    <nav>
+        <li><img class="logo-img" src="Images/LOGO1-removebg-preview.png" height="90px"></li>
+        <li><a class="active" href="Home.html">Home</a></li>
+        <li><a href="Rooms.html">Rooms</a></li>
+        <li><a href="Facilities.html">Facilities</a></li>
+        <li><a href="Offer.html">Offer</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Location.html">Location</a></li>
+        <li><a href="Review.html">Review</a></li>
+    </nav>
+
+    <!-- Title-->
+    <div class="title">
+        <h1 class="centered-heading" >WELCOME TO ZAB'S HOTEL KUALA TERENGGANU</h1>
+		<p><i>"Your Comfort, Our Pleasure"</i></p>
+    </div>
+
+    <!-- Container for check availability -->
+    <div class="book">
+        <div class="flex">
+            <div class="input grid">
+                <div class="box">
+                    <label>Check-in:</label>
+                    <input type="date" placeholder="CHECK-IN">
+                </div>
+                <div class="box">
+                    <label>Check-out:</label>
+                    <input type="date" placeholder="CHECK-OUT">
+                </div>
+                <div class="box">
+                    <label>Guest:</label>
+                    <input type="number" placeholder="0">
+                </div>
+                <div class="search">
+                    <a href="Rooms.html"> <!-- Link the entire search area -->
+                        <input type="submit" value="SEARCH">
+                    </a>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sections -->
+    <div class="sections">
+
+        <!-- Amenities Section -->
+        <div class="section">
+          <h2>Amenities</h2>
+          <p style="margin-bottom: 50px;">Priotizing creating a warm and inviting atmosphere for guests. I'd focus on exceptional customer service, comfortable accommodations, and a range of amenities to ensure an enjoyable stay, from quality dining options to well-maintained recreational facilities. Every aspect would be designed to exceed guest expectations and create lasting, positive memories.</p>
+        </div>
+  
+        <!-- Picture Section -->
+        <div class="section">
+          
+          <div class="image-container">
+
+          	<div class="gallery-item">
+              <img src="Images\restaurant.jpg" alt="Picture 1">
+              <p style="position: relative; text-align: center; margin-top: 0px;">Restaurant</p>
+            </div>
+
+            <div class="gallery-item">
+              <img src="Images\fitnessgym.jpg" alt="Picture 2">
+              <p style="position: relative; text-align: center; margin-top: 0px;">Fitness Center</p>
+            </div>
+
+            <div class="gallery-item">
+              <img src="Images\point.jfif"alt="Picture 3">
+              <p style="position: relative; text-align: center; margin-top: 0px;">Pets not allowed</p>
+            </div>
+
+            <div class="gallery-item">
+              <img src="Images\pool.jpg" alt="Picture 4">
+              <p style="position: relative; text-align: center; margin-top: 0px;">Outdoor Pool</p>
+            </div>
+
+          </div>
+        </div>
+  
+        <!-- Reviews Section -->
+		<div class="section">
+		    <h2>Customer Reviews</h2>
+		    
+		    <!-- Comment Box 1 -->
+		    <div class="comment-box">
+		      <div >
+		      	<img class="profile-pic" src="Images\pp2.jpg" alt="Picture 1">
+		      </div>
+		      <div class="comment-content">
+		        <h3>Azhar Heri</h3>
+		        <div class="star-rating">
+		          <!-- Display star rating here -->
+		          <span class="fa fa-star checked"></span>
+		          <span class="fa fa-star checked"></span>
+		          <span class="fa fa-star checked"></span>
+		          <span class="fa fa-star checked"></span>
+		          <span class="fa fa-star"></span>
+		        </div>
+		        <p>Hotel ini sangat Seronok diduki saya kasi 4 bintang. Yahuuuu</p>
+		      </div>
+		    </div>
+	    </div>
+	</div>
+</body>
+	    <!-- Footer -->
+	<footer>
+		<div class="container">
+
+			<div class="footer-col">
+				<h3>Location Address:</h3>
+				<p>No 23,Jalan Pantai,Kuala Terengganu</p>
+			</div>
+
+			<div class="footer-col">
+				<h3>How can we help you?</h3>
+				<div class="centerbtn">
+					<button><a href="tel:601136527066" class="btn btn1">Request a call</a></button>
+					<button><a href="daniafiras13@gmail.com" class="btn btn2">Email Us</a></button>
+				</div>
+			</div>
+
+			<div class="footer-col">
+				<h3>Follow Us On</h3>
+				<div class="social-links">
+					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+				</div>
+			</div>
+		</div>
+
+		<div class="bottom-bar">
+			<p>&copy2023 Zab's Hotel</p>
+		</div>
+	</footer>
+</html>
